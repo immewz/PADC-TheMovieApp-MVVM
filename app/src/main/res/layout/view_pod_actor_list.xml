@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.mewz.themovieapp.viewpods.ActorListViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:paddingVertical="@dimen/margin_large">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBestActor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:text="@string/lbl_best_actors"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMoreActors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/tvBestActor"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:text="@string/lbl_more_actors"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvActorList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBestActor"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:clipToPadding="false"/>
+
+</com.padcmyanmar.mewz.themovieapp.viewpods.ActorListViewPod>
